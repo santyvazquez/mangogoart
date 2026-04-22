@@ -1,0 +1,25 @@
+/* ═══════════════════════════════════════════
+   REVEAL ANIMATIONS
+═══════════════════════════════════════════ */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 650ms var(--ease-drama), transform 650ms var(--ease-drama)
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: none
+}
+
+.reveal.d1 {
+    transition-delay: 100ms
+}
+
+.reveal.d2 {
+    transition-delay: 200ms
+}
+
+.reveal.d3 {
+    transition-delay: 300ms
+}

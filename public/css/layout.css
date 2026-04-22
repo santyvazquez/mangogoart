@@ -1,0 +1,14 @@
+/* ═══════════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════════ */
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding-left: var(--px);
+    padding-right: var(--px)
+}
+
+section {
+    padding-top: var(--py);
+    padding-bottom: var(--py)
+}

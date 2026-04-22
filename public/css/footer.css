@@ -1,0 +1,81 @@
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+.footer {
+    background: var(--carbon);
+    border-top: 1px solid var(--fog)
+}
+
+.foot-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 48px
+}
+
+.foot-logo {
+    font-family: var(--f-display);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    color: var(--white);
+    display: block;
+    margin-bottom: 12px
+}
+
+.foot-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.foot-soc {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px
+}
+
+.foot-soc a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--fog);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--silver);
+    transition: border-color 300ms ease, color 300ms ease
+}
+
+.foot-soc a:hover {
+    border-color: var(--accent);
+    color: var(--accent)
+}
+
+.foot-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px
+}
+
+.foot-nav a {
+    font-family: var(--f-body);
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--silver);
+    transition: color 250ms ease
+}
+
+.foot-nav a:hover {
+    color: var(--accent)
+}
+
+.foot-bottom {
+    border-top: 1px solid var(--fog);
+    padding: 24px 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}

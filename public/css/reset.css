@@ -1,0 +1,70 @@
+/* ═══════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    background: #0A0A0A;
+    color: #F0F2F5;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit
+}
+
+:focus-visible {
+    outline: 2px solid #C8A96E;
+    outline-offset: 3px
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important
+    }
+}

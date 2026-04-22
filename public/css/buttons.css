@@ -1,0 +1,68 @@
+/* ═══════════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════════ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--f-body);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    border-radius: var(--r-full);
+    transition: all 300ms var(--ease);
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    position: relative
+}
+
+.btn--primary {
+    background: var(--accent);
+    color: var(--obsidian);
+    padding: 14px 36px
+}
+
+.btn--primary:hover {
+    background: var(--accent-dim);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(200, 169, 110, .2)
+}
+
+.btn--primary:active {
+    transform: translateY(0)
+}
+
+.btn--secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 13px 35px;
+    border: 1px solid var(--fog)
+}
+
+.btn--secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-glow);
+    transform: translateY(-2px)
+}
+
+.btn--secondary:active {
+    transform: translateY(0)
+}
+
+.btn--sm {
+    padding: 10px 22px;
+    font-size: 11px
+}
+
+.btn--lg {
+    padding: 18px 48px;
+    font-size: 14px
+}
+
+.btn--full {
+    width: 100%
+}

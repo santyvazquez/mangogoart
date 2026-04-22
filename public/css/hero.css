@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+.hero {
+    height: 100svh;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: clamp(60px, 8vh, 100px);
+    overflow: hidden
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0
+}
+
+.hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    filter: brightness(.75) contrast(1.05)
+}
+
+/* Visual placeholder cuando no hay imagen */
+.hero-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0c0e10 0%, #181a1c 35%, #0a0c0e 65%, #131517 100%)
+}
+
+.hero-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 65% 35%, rgba(200, 169, 110, .06) 0%, transparent 70%), radial-gradient(ellipse 40% 50% at 25% 65%, rgba(255, 255, 255, .025) 0%, transparent 60%)
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 10, 10, .95) 0%, rgba(10, 10, 10, .48) 42%, rgba(10, 10, 10, .14) 100%)
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%
+}
+
+.hero-tag {
+    animation: hIn 800ms var(--ease-drama) 200ms both;
+    transform: translateY(-8px);
+    opacity: 0
+}
+
+.hero-title {
+    animation: hIn 900ms var(--ease-drama) 400ms both;
+    opacity: 0;
+    margin-top: 8px
+}
+
+.hero-sub {
+    font-family: var(--f-body);
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 300;
+    color: var(--cloud);
+    margin-top: 16px;
+    margin-bottom: 36px;
+    max-width: 480px;
+    animation: hIn 800ms var(--ease-drama) 700ms both;
+    opacity: 0
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    animation: hIn 800ms var(--ease-drama) 950ms both;
+    opacity: 0
+}
+
+@keyframes hIn {
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.scroll-hint {
+    position: absolute;
+    bottom: 36px;
+    right: var(--px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+    animation: hIn 800ms var(--ease-drama) 1200ms both;
+    opacity: 0
+}
+
+.scroll-line {
+    width: 1px;
+    height: 48px;
+    background: var(--accent);
+    animation: scrollPulse 2s ease-in-out infinite
+}
+
+@keyframes scrollPulse {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+        opacity: 1
+    }
+
+    50% {
+        transform: scaleY(.35);
+        opacity: .25
+    }
+}

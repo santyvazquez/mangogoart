@@ -1,0 +1,184 @@
+  /* ═══════════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════════ */
+  .contact {
+      background: var(--carbon)
+  }
+
+  .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: clamp(48px, 6vw, 96px);
+      align-items: start
+  }
+
+  .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px
+  }
+
+  .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 8px
+  }
+
+  .c-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--f-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--cloud)
+  }
+
+  .c-icon {
+      color: var(--accent);
+      flex-shrink: 0;
+      display: flex
+  }
+
+  .c-item a {
+      transition: color 150ms ease
+  }
+
+  .c-item a:hover {
+      color: var(--accent)
+  }
+
+  .c-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px
+  }
+
+  .c-soc-a {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--fog);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--silver);
+      transition: border-color 300ms ease, color 300ms ease
+  }
+
+  .c-soc-a:hover {
+      border-color: var(--accent);
+      color: var(--accent)
+  }
+
+  /* Form */
+  .form {
+      display: flex;
+      flex-direction: column
+  }
+
+  .f-group {
+      margin-bottom: 20px
+  }
+
+  .f-label {
+      display: block;
+      font-family: var(--f-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--silver);
+      margin-bottom: 8px
+  }
+
+  .f-input,
+  .f-select,
+  .f-textarea {
+      width: 100%;
+      background: var(--asphalt);
+      border: 1px solid var(--fog);
+      border-radius: var(--r-md);
+      padding: 14px 18px;
+      font-family: var(--f-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--white);
+      transition: border-color 300ms var(--ease);
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none
+  }
+
+  .f-input::placeholder,
+  .f-textarea::placeholder {
+      color: var(--mist)
+  }
+
+  .f-input:focus,
+  .f-select:focus,
+  .f-textarea:focus {
+      border-color: var(--accent)
+  }
+
+  .f-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239EA3AD' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+      cursor: pointer
+  }
+
+  .f-select option {
+      background: var(--asphalt)
+  }
+
+  .f-textarea {
+      resize: vertical;
+      min-height: 120px
+  }
+
+  .f-err {
+      display: block;
+      font-size: 12px;
+      color: #e06666;
+      margin-top: 5px;
+      min-height: 16px
+  }
+
+  .f-note {
+      margin-top: 16px;
+      text-align: center;
+      font-family: var(--f-body);
+      font-size: 13px;
+      color: var(--silver)
+  }
+
+  .f-note a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px
+  }
+
+  .f-success,
+  .f-error-msg {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: var(--r-md);
+      font-family: var(--f-body);
+      font-size: 14px;
+      text-align: center
+  }
+
+  .f-success {
+      background: rgba(200, 169, 110, .1);
+      border: 1px solid var(--accent);
+      color: var(--accent)
+  }
+
+  .f-error-msg {
+      background: rgba(224, 102, 102, .1);
+      border: 1px solid #e06666;
+      color: #e06666
+  }
